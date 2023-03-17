@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>mouse and cheese</title>
+</head>
+<body>
+    <div id = "container">
+        <div id="intro">
+            <h1 id="title">Mouse and Cheese</h1>
+            <p>It is a word's spelling Game. 
+            Basically there is a mouse on the floor with a piece of cheese to the right.<br>
+            Your goal is to not let the mouse get to the cheese.<br>
+            At the start of the game, you will be provided with several empty underlines in a line.<br>
+            You start by guessing what letter is in the word.<br>
+            Once you start, there is a board that stores the "guess history" of the wrong letter if the letter doesn't exist.<br>
+            If it does exist in the word, the letter would be put on the underline. For each wrong guess, the mouse would move to right.<br>
+            If the mouse reaches the cheese, you lose.<br>
+            </p>
+            <p style="color: navy">
+                After you win or lose, you can restart the game by clicking the "Restart" button and then click "Start".<br>
+            </p>
+        </div>
+        <div id = "credential">
+            <div id="game_start">
+                <button id = "start">Start</button>
+                <button id = "restart">Restart</button>
+            </div>
+            <div id = "word">
+                <p id = "underline"></p>
+                <p id="guessed">Guessed Wrong Letters:</p>
+                <div class="guess" id="guessdiv">
+                </div>
+            </div>
+            <input type = "text" id = "input" placeholder = "Enter a letter">
+            <button id = "check">Check</button>
+        </div>
+        <div id = "images">
+            <!-- <marquee> -->
+            <img id="mouse" src="images/mouse.jpg" alt="mouse">
+            <img id="cheese" src="images/cheese.jpg" alt="cheese">
+            <!-- </marquee> -->
+            <canvas id="myCanvas" width="100%" height="75px"></canvas>
+        </div>
+        
+    </div>
+    <!-- import jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type = "module" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+{
+  "name": "junyipan",
+  "version": "1.0.0",
+  "description": "Mouse and Cheese",
+  "main": "game.js",
+  "type": "module",
+  "scripts": {
+    "start": "node game.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CSE-264/final-project-JunyiPan-F.git"
+  },
+  "keywords": [
+    "jup324"
+  ],
+  "author": "Junyi Pan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CSE-264/final-project-JunyiPan-F/issues"
+  },
+  "homepage": "https://github.com/CSE-264/final-project-JunyiPan-F#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "jquery": "^3.6.1",
+    "node-fetch": "^3.3.0"
+  }
+}
